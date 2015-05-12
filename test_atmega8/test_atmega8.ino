@@ -20,7 +20,8 @@ void motorAction(int fwm, int bkm,int anm,int motspeed) {
         digitalWrite(fwm,LOW);
         digitalWrite(bkm,LOW);
       }
-      analogWrite(anm,abs(motspeed));
+      //analogWrite(anm,abs(motspeed));
+      analogWrite(anm,255);
 }
 
 void loop() {
